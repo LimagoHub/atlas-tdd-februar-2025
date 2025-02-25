@@ -27,9 +27,21 @@ public:
  *
  */
     void speichern(person &person_)   override{
-        if(person_.getVorname().length() < 2)
-            throw personen_service_exception{"Vorname zu kurz!"};
-        throw personen_service_exception{"Nachname zu kurz!"};
+        try {
+            if (person_.getVorname().length() < 2)
+                throw personen_service_exception{"Vorname zu kurz!"};
+            if (person_.getNachname().length() < 2)
+                throw personen_service_exception{"Nachname zu kurz!"};
+            if (person_.getVorname() == "Attila")
+                throw personen_service_exception{"Antipath"};
+
+            repo.save_or_update(person_);
+        } catch (const personen_service_exception &ex) {
+            throw ex;
+        }
+        catch (const std::exception &ex) {
+            throw personen_service_exception("Datenbank nicht erreichbar");
+        }
     }
 
 
