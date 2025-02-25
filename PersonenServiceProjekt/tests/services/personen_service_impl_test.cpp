@@ -7,7 +7,7 @@
 TEST_F(personen_service_impl_test, speichern__VornameZuKurz__throws_personen_service_exception){
     try {
         // Arrange
-        person invalidPerson{"J", "Doe"};
+        person invalidPerson{"j", "Doe"};
 
         // Action
         objectUnderTest.speichern(invalidPerson);
