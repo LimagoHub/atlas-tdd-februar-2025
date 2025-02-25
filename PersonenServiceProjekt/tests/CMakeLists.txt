@@ -16,6 +16,8 @@ set_target_properties(gmock_main gtest_main PROPERTIES EXCLUDE_FROM_ALL 1 EXCLUD
 set(SOURCE
 	main.cpp
 		Mockpersonen_repository.h test.cpp test.cpp
+		services/personen_service_impl_test.cpp
+		services/personen_service_impl_test.h
 
 )
 

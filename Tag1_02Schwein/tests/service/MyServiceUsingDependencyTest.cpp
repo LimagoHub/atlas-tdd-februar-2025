@@ -7,10 +7,18 @@
 
 TEST_F(MyServiceUsingDependencyTest, MockdemoFooFunc) {
 
+/*
+ *
+ *  void f(std::string value) {
+        transform(value.begin(), value.end(), value.begin(), ::toupper);
+        dependency.foo(value);
+    }
+ *
+ */
 
-
-    // Recorddmode
+    // Recordmode
     EXPECT_CALL(dependencyMock, foo("HALLO"));
+    //EXPECT_CALL(dependencyMock, foo(_)); Parameter laesst alle Werte zu
 
     // Replay
 
@@ -27,13 +35,11 @@ TEST_F(MyServiceUsingDependencyTest, MockdemoFooBarFunc) {
  */
     // Arrange
     // Recorddmode
-    EXPECT_CALL(dependencyMock, foobar(_))
-            .Times(1)
-            .WillOnce(Return(2));
 
-    EXPECT_CALL(dependencyMock, foobar("Hallo Welt"))
-            .Times(1)
-            .WillOnce(Return(3));
+
+    EXPECT_CALL(dependencyMock, foobar(EndsWith("Welt")))
+            .Times(2)
+            .WillRepeatedly(Return(3));
 
 
     // Replay
@@ -42,7 +48,7 @@ TEST_F(MyServiceUsingDependencyTest, MockdemoFooBarFunc) {
 
 
     // Assertion
-    EXPECT_THAT( objectUnderTest.g("Hello"), Eq(7));
+    EXPECT_THAT( objectUnderTest.g("Hello"), Eq(8));
     EXPECT_THAT( objectUnderTest.g("Hallo"), Eq(8));
 
 }
@@ -58,11 +64,11 @@ TEST_F(MyServiceUsingDependencyTest, MockdemoBarFunc) {
 
     // Arrange
     // Recordmode
-    EXPECT_CALL(dependencyMock, bar()).Times(1).WillOnce(Return(2));
+    EXPECT_CALL(dependencyMock, bar()).Times(AtLeast(1)).WillRepeatedly(Return(3));
 
     // Action
     const auto result = objectUnderTest.h();
 
     // Assertion
-    EXPECT_THAT(result, Eq(4));
+    EXPECT_THAT(result, Eq(9));
 }

@@ -16,6 +16,7 @@ public:
     void f(std::string value) {
         transform(value.begin(), value.end(), value.begin(), ::toupper);
         dependency.foo(value);
+
     }
 
     size_t g(std::string value) {

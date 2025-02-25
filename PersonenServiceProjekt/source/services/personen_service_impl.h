@@ -5,8 +5,6 @@
 #pragma once
 #include "../persistence/personen_repository.h"
 #include "personen_service.h"
-
-
 #include "personen_service_exception.h"
 
 class personen_service_impl :public personen_service{
@@ -15,8 +13,7 @@ class personen_service_impl :public personen_service{
 public:
 
 
-    personen_service_impl(personen_repository &repo) :
-        repo(repo) {}
+    personen_service_impl(personen_repository &repo) :repo(repo) {}
 
     /*
  *	Vorname < 2 -> PSE
@@ -30,13 +27,12 @@ public:
  *
  */
     void speichern(person &person_)   override{
-
-
+        if(person_.getVorname().length() < 2)
+            throw personen_service_exception{"Vorname zu kurz!"};
+        throw personen_service_exception{"Nachname zu kurz!"};
     }
 
-    void speichern(std::string vorname, std::string nachname) override {
 
-    }
 
 
 private:
