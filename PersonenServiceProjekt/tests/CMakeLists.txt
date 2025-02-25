@@ -18,6 +18,7 @@ set(SOURCE
 		Mockpersonen_repository.h test.cpp test.cpp
 		services/personen_service_impl_test.cpp
 		services/personen_service_impl_test.h
+		MockBlackListService.h
 
 )
 

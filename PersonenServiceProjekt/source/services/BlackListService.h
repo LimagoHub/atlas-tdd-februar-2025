@@ -10,5 +10,5 @@ public:
     BlackListService() = default;
     virtual ~BlackListService() = default;
 
-    virtual bool isBlacklisted(const person &possibleBlacklistedPerson) = 0;
+    virtual bool isBlacklisted(const person &possibleBlacklistedPerson) const = 0;
 };
