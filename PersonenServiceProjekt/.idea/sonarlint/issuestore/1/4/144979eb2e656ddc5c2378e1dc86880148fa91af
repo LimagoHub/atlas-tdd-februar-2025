@@ -1,0 +1,8 @@
+
+Hcpp:S836"/field 'message' is uninitialized when used here(îŸ’Áúÿÿÿÿ
+İ	cpp:S5952
+"ÇAdd a using-declaration to this derived class to inherit the constructors of "exception", and remove the ones you manually duplicated. Note that this may add other constructors to your derived class.(şŒœæ
+k	cpp:S3490"VUse "=default" instead of the default implementation of this special member functions.(‰šêø
+I	cpp:S1709"/Add the "explicit" keyword to this constructor.(åªìîúÿÿÿÿ
+D	cpp:S1709"/Add the "explicit" keyword to this constructor.(¼»Ëß
+t	cpp:S1172"ZRemove the unused parameter "_Message", make it unnamed, or declare it "[[maybe_unused]]".(¸üßøÿÿÿÿ

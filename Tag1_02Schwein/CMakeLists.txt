@@ -14,6 +14,9 @@ add_executable(
 	SchweineProject 
 	source/main.cpp
 		source/tiere/Schwein.h
+		source/services/Dependency.h
+		source/services/DependencyImpl.h
+		source/services/MyServiceUsingDependency.h
 )
 
 

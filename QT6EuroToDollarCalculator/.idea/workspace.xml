@@ -13,7 +13,14 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated />
+    <generated>
+      <config projectName="QT6EuroToDollarCalculator" targetName="gtest_main" />
+      <config projectName="QT6EuroToDollarCalculator" targetName="QT6EuroToDollarCalculatorTest" />
+      <config projectName="QT6EuroToDollarCalculator" targetName="gtest" />
+      <config projectName="QT6EuroToDollarCalculator" targetName="QT6EuroToDollarCalculator" />
+      <config projectName="QT6EuroToDollarCalculator" targetName="gmock" />
+      <config projectName="QT6EuroToDollarCalculator" targetName="gmock_main" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -22,7 +29,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcad2410-22bd-490a-a43b-267285cacfab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tag1_02Schwein/source/services/Dependency.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tag1_02Schwein/source/services/DependencyImpl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tag1_02Schwein/source/services/Mult.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tag1_02Schwein/source/services/MultImpl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tag1_02Schwein/source/services/MultOptimizer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tag1_02Schwein/source/services/MyServiceUsingDependency.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tag1_02Schwein/tests/service/MockDependency.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tag1_02Schwein/tests/service/MyServiceUsingDependencyTest.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tag1_02Schwein/tests/service/MyServiceUsingDependencyTest.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tag1_02Schwein/tests/tiere/SchweinTest.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tag1_02Schwein/tests/tiere/SchweinTest.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tag1_02Schwein/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Tag1_02Schwein/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tag1_02Schwein/source/tiere/Schwein.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Tag1_02Schwein/source/tiere/Schwein.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tag1_02Schwein/tests/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Tag1_02Schwein/tests/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,75 +78,110 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;C/C++ File.main.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;CMake Application.QT6EuroToDollarCalculator.executor&quot;: &quot;Run&quot;,
-    &quot;Google Test.euro_to_dollar_presenter_impl_test.executor&quot;: &quot;Run&quot;,
-    &quot;Google Test.euro_to_dollar_presenter_impl_test.rechnen__NotANumberInEuroField__error_message_in_dollar_field.executor&quot;: &quot;Run&quot;,
-    &quot;Google Test.euro_to_dollar_presenter_impl_test.rechnen__unexpected_exception_in_underlying_service__error_message_in_dollar_field.executor&quot;: &quot;Run&quot;,
-    &quot;Google Test.euro_to_dollar_presenter_impl_test.rechnen__valid_value_in_euro_field__euro_passed_to_model.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
-    &quot;cf.advertisement.text.has.clang-format&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/JoachimWagner/Documents/git/Atlas/tdd/atlas-tdd-august-2024/QT6EuroToDollarCalculator&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CMake Application.QT6EuroToDollarCalculator.executor": "Run",
+    "Google Test.euro_to_dollar_presenter_impl_test.executor": "Run",
+    "Google Test.euro_to_dollar_presenter_impl_test.rechnen__NotANumberInEuroField__error_message_in_dollar_field.executor": "Run",
+    "Google Test.euro_to_dollar_presenter_impl_test.rechnen__unexpected_exception_in_underlying_service__error_message_in_dollar_field.executor": "Run",
+    "Google Test.euro_to_dollar_presenter_impl_test.rechnen__valid_value_in_euro_field__euro_passed_to_model.executor": "Run",
+    "Google Test.euro_to_dollar_presenter_impl_test.update_rechnen_action_state__NumberFollowedByStringInEuroField__rechnen_disabled.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "cf.advertisement.text.has.clang-format": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/JoachimWagner/Documents/git/Atlas/tdd/atlas-tdd-februar-2025/EuroToDollarSimplified",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CPPToolchains",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="C/C++ File.main.cpp">
-    <configuration name="euro_to_dollar_presenter_impl_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="QT6EuroToDollarCalculatorTest" CONFIG_NAME="Debug-MinGWQt" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="QT6EuroToDollarCalculatorTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_MODE="SUITE_TEST">
+}]]></component>
+  <component name="RunManager" selected="Google Test.euro_to_dollar_presenter_impl_test">
+    <configuration name="euro_to_dollar_presenter_impl_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QT6EuroToDollarCalculator" TARGET_NAME="QT6EuroToDollarCalculatorTest" CONFIG_NAME="Debug-MinGWQt" RUN_TARGET_PROJECT_NAME="QT6EuroToDollarCalculator" RUN_TARGET_NAME="QT6EuroToDollarCalculatorTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="euro_to_dollar_presenter_impl_test.rechnen__NotANumberInEuroField__error_message_in_dollar_field" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="QT6EuroToDollarCalculatorTest" CONFIG_NAME="Debug-MinGWQt" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="QT6EuroToDollarCalculatorTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="rechnen__NotANumberInEuroField__error_message_in_dollar_field" TEST_MODE="SUITE_TEST">
+    <configuration name="euro_to_dollar_presenter_impl_test.rechnen__NotANumberInEuroField__error_message_in_dollar_field" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QT6EuroToDollarCalculator" TARGET_NAME="QT6EuroToDollarCalculatorTest" CONFIG_NAME="Debug-MinGWQt" RUN_TARGET_PROJECT_NAME="QT6EuroToDollarCalculator" RUN_TARGET_NAME="QT6EuroToDollarCalculatorTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="rechnen__NotANumberInEuroField__error_message_in_dollar_field" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="euro_to_dollar_presenter_impl_test.rechnen__unexpected_exception_in_underlying_service__error_message_in_dollar_field" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="QT6EuroToDollarCalculatorTest" CONFIG_NAME="Debug-MinGWQt" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="QT6EuroToDollarCalculatorTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="rechnen__unexpected_exception_in_underlying_service__error_message_in_dollar_field" TEST_MODE="SUITE_TEST">
+    <configuration name="euro_to_dollar_presenter_impl_test.rechnen__unexpected_exception_in_underlying_service__error_message_in_dollar_field" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QT6EuroToDollarCalculator" TARGET_NAME="QT6EuroToDollarCalculatorTest" CONFIG_NAME="Debug-MinGWQt" RUN_TARGET_PROJECT_NAME="QT6EuroToDollarCalculator" RUN_TARGET_NAME="QT6EuroToDollarCalculatorTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="rechnen__unexpected_exception_in_underlying_service__error_message_in_dollar_field" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="euro_to_dollar_presenter_impl_test.rechnen__valid_value_in_euro_field__euro_passed_to_model" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="QT6EuroToDollarCalculatorTest" CONFIG_NAME="Debug-MinGWQt" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="QT6EuroToDollarCalculatorTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="rechnen__valid_value_in_euro_field__euro_passed_to_model" TEST_MODE="SUITE_TEST">
+    <configuration name="euro_to_dollar_presenter_impl_test.rechnen__valid_value_in_euro_field__euro_passed_to_model" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QT6EuroToDollarCalculator" TARGET_NAME="QT6EuroToDollarCalculatorTest" CONFIG_NAME="Debug-MinGWQt" RUN_TARGET_PROJECT_NAME="QT6EuroToDollarCalculator" RUN_TARGET_NAME="QT6EuroToDollarCalculatorTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="rechnen__valid_value_in_euro_field__euro_passed_to_model" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QT6EuroToDollarCalculator" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
-      <option name="sourceFile" value="main.cpp" />
+    <configuration name="euro_to_dollar_presenter_impl_test.update_rechnen_action_state__NumberFollowedByStringInEuroField__rechnen_disabled" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QT6EuroToDollarCalculator" TARGET_NAME="QT6EuroToDollarCalculatorTest" CONFIG_NAME="Debug-MinGWQt" RUN_TARGET_PROJECT_NAME="QT6EuroToDollarCalculator" RUN_TARGET_NAME="QT6EuroToDollarCalculatorTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="update_rechnen_action_state__NumberFollowedByStringInEuroField__rechnen_disabled" TEST_MODE="SUITE_TEST">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QT6EuroToDollarCalculator" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QT6EuroToDollarCalculator" TARGET_NAME="QT6EuroToDollarCalculator" CONFIG_NAME="Debug-MinGWQt" RUN_TARGET_PROJECT_NAME="QT6EuroToDollarCalculator" RUN_TARGET_NAME="QT6EuroToDollarCalculator">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QT6EuroToDollarCalculator" TARGET_NAME="gmock" CONFIG_NAME="Debug-MinGWQt">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QT6EuroToDollarCalculator" TARGET_NAME="gmock_main" CONFIG_NAME="Debug-MinGWQt">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QT6EuroToDollarCalculator" TARGET_NAME="gtest" CONFIG_NAME="Debug-MinGWQt">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QT6EuroToDollarCalculator" TARGET_NAME="gtest_main" CONFIG_NAME="Debug-MinGWQt">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test" />
+      <item itemvalue="CMake Application.gmock" />
+      <item itemvalue="CMake Application.gmock_main" />
+      <item itemvalue="CMake Application.gtest" />
+      <item itemvalue="CMake Application.gtest_main" />
+      <item itemvalue="CMake Application.QT6EuroToDollarCalculator" />
+      <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.update_rechnen_action_state__NumberFollowedByStringInEuroField__rechnen_disabled" />
       <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__NotANumberInEuroField__error_message_in_dollar_field" />
       <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__unexpected_exception_in_underlying_service__error_message_in_dollar_field" />
       <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__valid_value_in_euro_field__euro_passed_to_model" />
-      <item itemvalue="C/C++ File.main.cpp" />
+      <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="C/C++ File.main.cpp" />
         <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test" />
+        <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.update_rechnen_action_state__NumberFollowedByStringInEuroField__rechnen_disabled" />
         <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__valid_value_in_euro_field__euro_passed_to_model" />
         <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__unexpected_exception_in_underlying_service__error_message_in_dollar_field" />
         <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__NotANumberInEuroField__error_message_in_dollar_field" />
@@ -146,10 +202,13 @@
       <workItem from="1724242872440" duration="23000" />
       <workItem from="1724244962332" duration="4617000" />
       <workItem from="1737453597782" duration="260000" />
-      <workItem from="1740315408240" duration="1536000" />
-      <workItem from="1740382034562" duration="168000" />
-      <workItem from="1740382855267" duration="25000" />
-      <workItem from="1740383693842" duration="60000" />
+      <workItem from="1740411867732" duration="1071000" />
+      <workItem from="1740412966980" duration="249000" />
+      <workItem from="1740413231440" duration="354000" />
+      <workItem from="1740413599956" duration="86000" />
+      <workItem from="1740413698110" duration="2222000" />
+      <workItem from="1740421180203" duration="522000" />
+      <workItem from="1740421755346" duration="529000" />
     </task>
     <servers />
   </component>

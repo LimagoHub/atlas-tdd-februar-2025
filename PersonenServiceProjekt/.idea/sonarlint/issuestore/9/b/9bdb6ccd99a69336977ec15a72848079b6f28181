@@ -1,0 +1,6 @@
+
+i	cpp:S1235"H'personen_service_impl' has virtual functions but non-virtual destructor(¸Æµ üÿÿÿÿ8ú¥òÖÜ1
+@	cpp:S1481'"unused exception parameter 'ex'(Ë´Š®ùÿÿÿÿ8×ŞÙşÜ1
+k	cpp:S1679%"JRemove "ex" from this "throw" statement to rethrow the original exception.(¤­—Îşÿÿÿÿ8ëŞÙşÜ1
+Z	cpp:S1238-">Pass expensive to copy object "vorname" by reference to const.(÷ÌÕ„8ìŞÙşÜ1
+[	cpp:S1238-"?Pass expensive to copy object "nachname" by reference to const.(÷ÌÕ„8ìŞÙşÜ1
