@@ -32,6 +32,13 @@ public:
 		//populate_items();
 	}
 
+    // (2.)
+    /*
+     * "0" ins Eurofeld schreiben
+     * "0" ins Dollarfeld
+     * button aktivieren
+     *
+     */
 	void populate_items() const override
 	{
         
@@ -53,10 +60,10 @@ public:
 
 	}
 
-
+    // maske zerstoeren (1.)
     void beenden() const override
 	{
-        
+
 	}
 
     /*

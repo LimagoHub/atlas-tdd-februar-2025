@@ -92,3 +92,19 @@ TEST_F(personen_service_impl_test, speichern__happy_day__person_passed_to_repo_o
     EXPECT_THAT(captured_person.getNachname(), AnyOf(Eq("Doe"), Eq("Mustermann")));
     EXPECT_THAT(captured_person.getId(), Not(IsEmpty()));
 }
+
+TEST_F(personen_service_impl_test, speichern__lamda__person_passed_to_repo_overloaded) {
+
+    int count = 0;
+
+    EXPECT_CALL(blackListServiceMock, isBlacklisted(_)).WillOnce([this](const person& person)->bool {
+        return person.getVorname() == "Attila";
+    });
+    EXPECT_CALL(repositoryMock, save_or_update(_)).WillRepeatedly([this, &count](const person& person)->void{
+        count ++;
+    });
+
+    objectUnderTest.speichern("John","Mustermann");
+
+
+}
