@@ -11,7 +11,9 @@ set_target_properties(gmock_main gtest_main PROPERTIES EXCLUDE_FROM_ALL 1 EXCLUD
 
 set(SOURCE test.cpp tiere/SchweinTest.cpp
 		service/MyServiceUsingDependencyTest.cpp
-		service/MyServiceUsingDependencyTest.h)
+		service/MyServiceUsingDependencyTest.h
+		service/UniqueServiceTest.cpp
+		service/UniqueServiceTest.h)
 
 # Create test executable
 add_executable(SchweineProjectTest ${SOURCE} ${HEADER}  )

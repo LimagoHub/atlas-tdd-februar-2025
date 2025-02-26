@@ -17,6 +17,8 @@ add_executable(
 		source/services/Dependency.h
 		source/services/DependencyImpl.h
 		source/services/MyServiceUsingDependency.h
+		source/services/UniqueDependency.h
+		source/services/UniqueService.h
 )
 
 
